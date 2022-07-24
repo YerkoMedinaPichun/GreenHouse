@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Green House</title>
+  <!-- Importando Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/public/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+
+  <!--Descripcion-->
+  <meta name="description" content="Green House, Venta de casas alrededor de todo Chile.">
+
+  <!--Url Real-->
+  <link rel="canonical" href="https://yerkomedinapichun.github.io/GreenHouse/">
+
+  <!--Favicon-->
+  <link rel="icon" href="public/img/logoGreenHouse.png">
+  <link rel="apple-touch-icon" href="public/img/logoGreenHouse.png">
+  <meta name="theme-color" content="#FF6600">
+
+  <!--Redes Sociales-->
+  <meta property="og:title" content="Green House" />
+  <!-- <meta property="og:type" content="video.movie" /> -->
+  <meta property="og:url" content="https://yerkomedinapichun.github.io/GreenHouse/" />
+  <meta property="og:image" content="public/build/img/redsocial.jpg" />
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="header">
+    <div class="contenedor__logo">
+      <a href="#">
+        <img loading="lazy" src="public/img/logoGreenHouse.png" class="logo" alt="Logo Green House">
+        <h1 class="titulo">Green House</h1>
+      </a>
+    </div>
+  </header>
+
+  <!-- nav -->
+  <nav class="nav">
+
+    <div class="contenedor-boton-menu">
+      <button id="boton-menu" class="boton-menu">
+        <ion-icon class="boton-menu--icono" name="menu"></ion-icon>
+      </button>
+    </div>
+    <ul id="menu" class="menu">
+      <li class="contenedor-enlace"><a class="enlace" href="#nosotros">Nosotros</a></li>
+      <li class="contenedor-enlace"><a class="enlace" href="#contacto">Contacto</a></li>
+      <li class="contenedor-enlace"><a class="enlace" href="#viviendas">Viviendas</a></li>
+    </ul>
+  </nav>
+  <!-- slider -->
+  <div class="contenedor-slider">
+    <div class="slider" id="slider">
+      <div class="slider__section">
+        <img loading="lazy" src="public/img/slider1.jpg" alt="slider 1" class="slider__img">
+      </div>
+      <div class="slider__section">
+        <img loading="lazy" src="public/img/slider2.jpg" alt="slider 2" class="slider__img">
+      </div>
+      <div class="slider__section">
+        <img loading="lazy" src="public/img/slider3.jpg" alt="slider 3" class="slider__img">
+      </div>
+    </div>
+    <div class="slider__btn slider__btn--left" id="btn-left" title="Anterior">
+      <ion-icon class="icono-btn-left" name="chevron-back-outline"></ion-icon>
+    </div>
+    <div class="slider__btn slider__btn--right" id="btn-right" title="Siguiente">
+      <ion-icon class="icono-btn-right" name="chevron-forward-outline"></ion-icon>
+    </div>
+  </div>
+  <!-- main -->
+  <main class="main">
+    <div class="contenedor">
+      <!-- nosotros -->
+      <section id="nosotros" class="nosotros">
+        <h2 class="titulo">Nosotros</h2>
+        <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat suscipit perspiciatis, vel
+          itaque
+          quo sequi a
+          fugit optio magni nisi voluptates, distinctio illo qui. Soluta atque sunt eius totam ea.
+          Eos nostrum quidem ducimus? Beatae, deleniti cupiditate facere hic repellat ullam velit ad recusandae,
+          dignissimos
+          reiciendis praesentium facilis asperiores unde dicta.</p>
+        <p class="info">Ducimus nostrum et nam distinctio aliquam omnis molestiae qui iste aperiam ut autem error
+          repudiandae tempora
+          velit, voluptate recusandae reprehenderit sint ipsum obcaecati architecto. Illo aspernatur consequuntur
+          consequatur laudantium architecto.</p>
+        <p class="info">
+          Voluptatum dolorem voluptate quam, dolor cupiditate
+          quisquam
+          voluptas est.
+          Fugit rem odio eligendi reprehenderit fugiat. Esse cum eos quam earum dolorem. Natus ipsum inventore itaque
+          assumenda architecto placeat eos, rem tempore sequi minima! Optio harum provident illum magnam quaerat.
+        </p>
+      </section>
+      <!-- contacto -->
+      <section class="contacto">
+        <h2 id="contacto" class="titulo">Contacto</h2>
+        <form class="formulario">
+
+          <label class="label" for="nombre">Nombre</label>
+          <input class="input" type="text" name="nombre" id="nombre">
+
+          <label class="label" for="apellido">Apellido</label>
+          <input class="input" type="text" name="apellido" id="apellido">
+
+          <label class="label" for="edad">Edad</label>
+          <input class="input" type="number" name="edad" id="edad">
+
+          <label class="label" for="telefono">Teléfono</label>
+          <input class="input" type="number" name="telefono" id="telefono">
+
+          <label class="label" for="email">Email</label>
+          <input class="input" type="email" name="email" id="email">
+
+          <input class="input boton" id="guardar" type="submit" value="Guardar">
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <!-- carrusel -->
+  <aside class="aside">
+    <div class="contenedor">
+      <h2 id="viviendas">Viviendas</h2>
+      <div class="contenedor-carrusel">
+        <div class="carrusel" id="carrusel">
+          <div class="carrusel__section">
+            <img loading="lazy" src="public/img/carrusel_1.jpg" alt="carrusel 1" class="carrusel__img">
+          </div>
+          <div class="carrusel__section">
+            <img loading="lazy" src="public/img/carrusel_2.jpg" alt="carrusel 2" class="carrusel__img">
+          </div>
+          <div class="carrusel__section">
+            <img loading="lazy" src="public/img/carrusel_3.jpg" alt="carrusel 3" class="carrusel__img">
+          </div>
+          <div class="carrusel__section">
+            <img loading="lazy" src="public/img/carrusel_4.jpg" alt="carrusel 4" class="carrusel__img">
+          </div>
+          <div class="carrusel__section">
+            <img loading="lazy" src="public/img/carrusel_5.jpg" alt="carrusel 5" class="carrusel__img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="contenedor">
+      <div class="contenedor__logo">
+        <a href="#">
+          <img loading="lazy" src="public/img/logoGreenHouse.png" class="logo" alt="Logo Green House">
+        </a>
+      </div>
+      <ul class="menu--footer">
+        <li class="contenedor-enlace"><a class="enlace" href="#nosotros">Nosotros</a></li>
+        <li class="contenedor-enlace"><a class="enlace" href="#contacto">Contacto</a></li>
+        <li class="contenedor-enlace"><a class="enlace" href="#viviendas">Viviendas</a></li>
+      </ul>
+      <div id="uf" class="uf"></div>
+      <div class="copyright"><a href="https://yerkomedinapichun.github.io/GreenHouse/">
+          <span>&reg; Todos los Derechos Reservados</span><span>&copy; Yerko Medina Pichún</span></a></div>
+    </div>
+  </footer>
+
+
+  <!-- Importando Ionic icons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- Importando Script -->
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>

@@ -4,7 +4,7 @@ export function funcionesSliderCarrusel() {
   carrusel("carrusel", ".carrusel__section");
 }
 
-export function slider(id, section) {
+function slider(id, section) {
   const $slider = document.getElementById(id);
   let $sliderSection = document.querySelectorAll(section);
   let $sliderSectionLast = $sliderSection[$sliderSection.length - 1];

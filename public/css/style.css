@@ -2,14 +2,16 @@
 :root {
   --color-blanco: #ffffff;
   --color-negro: #000000;
-  --color-primario: #191a19;
-  --color-secundario: #1e5128;
-  --color-terciario: #4e9f3d;
+
+  --color-primario: #181818;
+  --color-secundario: #00552c;
+  --color-terciario: #00b960;
   --color-cuaternario: #d8e9a8;
+
   --color-gris-oscuro: #161616;
   --color-gris: #282828;
   --color-gris-muy-claro: #4d4d4d;
-  --color-claro: #979797;
+  --color-claro: #565656;
   --color-rojo: #eb1d36;
   --fuente-principal: "Roboto", sans-serif;
 }
@@ -51,9 +53,9 @@ h2 {
 /* header */
 .header {
   background: linear-gradient(
-    45deg,
-    rgba(216, 233, 168, 1) 10%,
-    rgba(163, 204, 127, 1) 90%
+    220.55deg,
+    var(--color-terciario) 0%,
+    var(--color-secundario) 100%
   );
   width: 100%;
   height: 10rem;
@@ -78,16 +80,15 @@ a .logo {
 a .titulo {
   font-size: 3.4rem;
   font-weight: 400;
-  color: var(--color-primario);
+  color: var(--color-blanco);
 }
 
 /* nav */
 .nav {
   background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(25, 26, 25, 1) 45%,
-    rgba(77, 77, 77, 1) 100%
+    220.55deg,
+    var(--color-claro) 0%,
+    var(--color-primario) 100%
   );
   height: 6.4rem;
   position: sticky;
@@ -98,7 +99,11 @@ a .titulo {
 .nav .boton-menu {
   width: 5rem;
   height: 5rem;
-  background-color: var(--color-terciario);
+  background: linear-gradient(
+    220.55deg,
+    var(--color-terciario) 0%,
+    var(--color-secundario) 100%
+  );
   border: none;
   border-radius: 1rem;
   position: absolute;
@@ -108,7 +113,7 @@ a .titulo {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  transition: background-color ease 0.3s;
+  transition: background ease 0.3s;
 }
 .boton-menu--icono {
   font-size: 4rem;
@@ -116,7 +121,11 @@ a .titulo {
   transition: color ease 0.3s;
 }
 .nav .boton-menu--encendido {
-  background-color: var(--color-blanco);
+  background: linear-gradient(
+    220.55deg,
+    var(--color-blanco) 0%,
+    var(--color-cuaternario) 100%
+  );
 }
 .boton-menu--encendido .boton-menu--icono {
   color: var(--color-terciario);
@@ -124,10 +133,9 @@ a .titulo {
 
 .menu {
   background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(25, 26, 25, 1) 45%,
-    rgba(77, 77, 77, 1) 100%
+    220.55deg,
+    var(--color-claro) 0%,
+    var(--color-primario) 100%
   );
   border-top: 0.1rem solid var(--color-gris);
   width: 100%;
@@ -155,6 +163,7 @@ a .titulo {
   justify-content: center;
   align-items: center;
   transition: background-color ease 0.3s, border-radius ease 0.3s;
+  cursor: pointer;
 }
 .enlace {
   text-decoration: none;
@@ -299,12 +308,10 @@ a .titulo {
 }
 .contacto {
   padding: 2rem 0;
-  /* background-color: var(--color-primario); */
   background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(25, 26, 25, 1) 45%,
-    rgba(77, 77, 77, 1) 100%
+    220.55deg,
+    var(--color-claro) 0%,
+    var(--color-primario) 100%
   );
   box-shadow: 2px 2px 24px 7px var(--color-gris);
   border-radius: 1rem;
@@ -361,23 +368,31 @@ a .titulo {
 }
 .boton {
   margin-top: 6rem;
-  background-color: var(--color-terciario);
+  background: linear-gradient(
+    220.55deg,
+    var(--color-terciario) 0%,
+    var(--color-secundario) 100%
+  );
   color: var(--color-blanco);
   border: none;
   border-radius: 1rem;
-  transition: background-color ease 0.3s, color ease 0.3s;
+  transition: background ease 0.3s, color ease 0.3s;
   cursor: pointer;
   box-shadow: 2px 2px 30px -3px var(--color-negro);
 }
 .boton:hover {
-  background-color: var(--color-blanco);
+  background: linear-gradient(
+    220.55deg,
+    var(--color-blanco) 0%,
+    var(--color-cuaternario) 100%
+  );
   color: var(--color-terciario);
 }
 .valido {
   border: 0.1rem solid var(--color-terciario);
 }
 .no-valido {
-  border: 0.1rem solid red;
+  border: 0.1rem solid var(--color-rojo);
 }
 
 .ocultar {
@@ -388,12 +403,10 @@ a .titulo {
 
 .aside {
   padding: 2rem 0 8rem;
-  /* background-color: var(--color-terciario); */
   background: linear-gradient(
-    45deg,
-    rgba(78, 159, 61, 1) 0%,
-    rgba(30, 81, 40, 1) 45%,
-    rgba(78, 159, 61, 1) 100%
+    220.55deg,
+    var(--color-terciario) 0%,
+    var(--color-secundario) 100%
   );
 }
 .aside h2 {
@@ -449,7 +462,6 @@ a .titulo {
 }
 .footer .contenedor__logo a {
   position: relative;
-  background-color: red;
 }
 .footer .contenedor__logo a .logo {
   position: absolute;
@@ -495,7 +507,7 @@ a .titulo {
   flex-direction: column;
 }
 
-/* Ventana Modall */
+/* Ventana Modal */
 .contenedor-ventana-mensaje {
   width: 100%;
   height: 100%;
@@ -510,10 +522,9 @@ a .titulo {
 }
 .contenedor-mensaje {
   background: linear-gradient(
-    45deg,
-    rgba(30, 81, 40, 1) 0%,
-    rgba(78, 159, 61, 1) 15%,
-    rgba(78, 159, 61, 1) 93%
+    220.55deg,
+    var(--color-terciario) 0%,
+    var(--color-secundario) 100%
   );
   z-index: 100;
   position: fixed;
@@ -532,7 +543,7 @@ a .titulo {
 
 .mensaje {
   font-size: 1.8rem;
-  color: var(--color-negro);
+  color: var(--color-blanco);
   z-index: 110;
   padding: 2rem;
   width: 100%;
